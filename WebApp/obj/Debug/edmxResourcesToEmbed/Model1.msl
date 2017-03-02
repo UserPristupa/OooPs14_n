@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище OooPs14_dbModelContainer" CdmEntityContainer="OooPs14_dbEntities2">
+    <EntitySetMapping Name="Adress_contragent">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Adress_contragent">
+        <MappingFragment StoreEntitySet="Adress_contragent">
+          <ScalarProperty Name="id_adr_contr" ColumnName="id_adr_contr" />
+          <ScalarProperty Name="id_contragent" ColumnName="id_contragent" />
+          <ScalarProperty Name="id_conec_adress" ColumnName="id_conec_adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arhiv_sotr">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Arhiv_sotr">
+        <MappingFragment StoreEntitySet="Arhiv_sotr">
+          <ScalarProperty Name="id_arh" ColumnName="id_arh" />
+          <ScalarProperty Name="id_sotr" ColumnName="id_sotr" />
+          <ScalarProperty Name="data_uvolneniya" ColumnName="data_uvolneniya" />
+          <ScalarProperty Name="name_sotr" ColumnName="name_sotr" />
+          <ScalarProperty Name="lastname_sotr" ColumnName="lastname_sotr" />
+          <ScalarProperty Name="adress_sotr" ColumnName="adress_sotr" />
+          <ScalarProperty Name="email_sotr" ColumnName="email_sotr" />
+          <ScalarProperty Name="phone_sotr" ColumnName="phone_sotr" />
+          <ScalarProperty Name="id_otd" ColumnName="id_otd" />
+          <ScalarProperty Name="data_priema" ColumnName="data_priema" />
+          <ScalarProperty Name="id_dolzhn" ColumnName="id_dolzhn" />
+          <ScalarProperty Name="id_prichin" ColumnName="id_prichin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banki">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Banki">
+        <MappingFragment StoreEntitySet="Banki">
+          <ScalarProperty Name="id_bank" ColumnName="id_bank" />
+          <ScalarProperty Name="name_banka" ColumnName="name_banka" />
+          <ScalarProperty Name="id_strana" ColumnName="id_strana" />
+          <ScalarProperty Name="kod_banka" ColumnName="kod_banka" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Buchalterya">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Buchalterya">
+        <MappingFragment StoreEntitySet="Buchalterya">
+          <ScalarProperty Name="id_buh" ColumnName="id_buh" />
+          <ScalarProperty Name="summa" ColumnName="summa" />
+          <ScalarProperty Name="id_valyti" ColumnName="id_valyti" />
+          <ScalarProperty Name="id_contragent" ColumnName="id_contragent" />
+          <ScalarProperty Name="prih_rash" ColumnName="prih_rash" />
+          <ScalarProperty Name="id_tip_doc" ColumnName="id_tip_doc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Chet_inBank">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Chet_inBank">
+        <MappingFragment StoreEntitySet="Chet_inBank">
+          <ScalarProperty Name="id_chet_inbak" ColumnName="id_chet_inbak" />
+          <ScalarProperty Name="nomer_cheta" ColumnName="nomer_cheta" />
+          <ScalarProperty Name="id_bank" ColumnName="id_bank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Con_Adress_Dom">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Con_Adress_Dom">
+        <MappingFragment StoreEntitySet="Con_Adress_Dom">
+          <ScalarProperty Name="id_con_adr_dom" ColumnName="id_con_adr_dom" />
+          <ScalarProperty Name="id_ulica" ColumnName="id_ulica" />
+          <ScalarProperty Name="nomer_name_doma" ColumnName="nomer_name_doma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Con_adress_Point">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Con_adress_Point">
+        <MappingFragment StoreEntitySet="Con_adress_Point">
+          <ScalarProperty Name="id_con_adr_point" ColumnName="id_con_adr_point" />
+          <ScalarProperty Name="id_con_adr_dom" ColumnName="id_con_adr_dom" />
+          <ScalarProperty Name="con_name_adsr_point" ColumnName="con_name_adsr_point" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contact">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="id_contact" ColumnName="id_contact" />
+          <ScalarProperty Name="osn_phone" ColumnName="osn_phone" />
+          <ScalarProperty Name="dop_phone" ColumnName="dop_phone" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contragenti">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Contragenti">
+        <MappingFragment StoreEntitySet="Contragenti">
+          <ScalarProperty Name="id_contr" ColumnName="id_contr" />
+          <ScalarProperty Name="name_contr" ColumnName="name_contr" />
+          <ScalarProperty Name="id_adr_contr" ColumnName="id_adr_contr" />
+          <ScalarProperty Name="id_chet_inbank" ColumnName="id_chet_inbank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contragenti_contact">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Contragenti_contact">
+        <MappingFragment StoreEntitySet="Contragenti_contact">
+          <ScalarProperty Name="id_contr_cont" ColumnName="id_contr_cont" />
+          <ScalarProperty Name="id_contrag" ColumnName="id_contrag" />
+          <ScalarProperty Name="id_contact" ColumnName="id_contact" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Documents">
+        <MappingFragment StoreEntitySet="Documents">
+          <ScalarProperty Name="id_doc" ColumnName="id_doc" />
+          <ScalarProperty Name="id_tip_doc" ColumnName="id_tip_doc" />
+          <ScalarProperty Name="name_doc" ColumnName="name_doc" />
+          <ScalarProperty Name="id_otd" ColumnName="id_otd" />
+          <ScalarProperty Name="id_vid_doc" ColumnName="id_vid_doc" />
+          <ScalarProperty Name="id_sotrud_from" ColumnName="id_sotrud_from" />
+          <ScalarProperty Name="id_sotrud_to" ColumnName="id_sotrud_to" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dolzhnosti">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Dolzhnosti">
+        <MappingFragment StoreEntitySet="Dolzhnosti">
+          <ScalarProperty Name="id_dolzhn" ColumnName="id_dolzhn" />
+          <ScalarProperty Name="name_dolzhn" ColumnName="name_dolzhn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dvijenie_Documenta">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Dvijenie_Documenta">
+        <MappingFragment StoreEntitySet="Dvijenie_Documenta">
+          <ScalarProperty Name="id_dv_doc" ColumnName="id_dv_doc" />
+          <ScalarProperty Name="id_doc" ColumnName="id_doc" />
+          <ScalarProperty Name="data_sob" ColumnName="data_sob" />
+          <ScalarProperty Name="id_type_dvij" ColumnName="id_type_dvij" />
+          <ScalarProperty Name="id_contag" ColumnName="id_contag" />
+          <ScalarProperty Name="id_otd" ColumnName="id_otd" />
+          <ScalarProperty Name="id_sotr" ColumnName="id_sotr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="History_replace_sotr">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.History_replace_sotr">
+        <MappingFragment StoreEntitySet="History_replace_sotr">
+          <ScalarProperty Name="id_hrs" ColumnName="id_hrs" />
+          <ScalarProperty Name="id_sotr" ColumnName="id_sotr" />
+          <ScalarProperty Name="from_id_otd" ColumnName="from_id_otd" />
+          <ScalarProperty Name="to_id_otd" ColumnName="to_id_otd" />
+          <ScalarProperty Name="date_replace" ColumnName="date_replace" />
+          <ScalarProperty Name="from_id_dolzh" ColumnName="from_id_dolzh" />
+          <ScalarProperty Name="to_id_dolzh" ColumnName="to_id_dolzh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mestnost">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Mestnost">
+        <MappingFragment StoreEntitySet="Mestnost">
+          <ScalarProperty Name="id_mesto" ColumnName="id_mesto" />
+          <ScalarProperty Name="id_region" ColumnName="id_region" />
+          <ScalarProperty Name="name_mesto" ColumnName="name_mesto" />
+          <ScalarProperty Name="post_index_mesto" ColumnName="post_index_mesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Otdely">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Otdely">
+        <MappingFragment StoreEntitySet="Otdely">
+          <ScalarProperty Name="id_otd" ColumnName="id_otd" />
+          <ScalarProperty Name="name_otd" ColumnName="name_otd" />
+          <ScalarProperty Name="id_otd_parent" ColumnName="id_otd_parent" />
+          <ScalarProperty Name="date_birth" ColumnName="date_birth" />
+          <ScalarProperty Name="date_death" ColumnName="date_death" />
+          <ScalarProperty Name="id_nach" ColumnName="id_nach" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prichina">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Prichina">
+        <MappingFragment StoreEntitySet="Prichina">
+          <ScalarProperty Name="id_prich" ColumnName="id_prich" />
+          <ScalarProperty Name="name_prich" ColumnName="name_prich" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="id_reg" ColumnName="id_reg" />
+          <ScalarProperty Name="id_stran" ColumnName="id_stran" />
+          <ScalarProperty Name="name_reg" ColumnName="name_reg" />
+          <ScalarProperty Name="post_index_region" ColumnName="post_index_region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniki">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Sotrudniki">
+        <MappingFragment StoreEntitySet="Sotrudniki">
+          <ScalarProperty Name="id_sotr" ColumnName="id_sotr" />
+          <ScalarProperty Name="name_sotr" ColumnName="name_sotr" />
+          <ScalarProperty Name="lastname_sotr" ColumnName="lastname_sotr" />
+          <ScalarProperty Name="adress_sotr" ColumnName="adress_sotr" />
+          <ScalarProperty Name="email_sotr" ColumnName="email_sotr" />
+          <ScalarProperty Name="phone_sotr" ColumnName="phone_sotr" />
+          <ScalarProperty Name="id_otd" ColumnName="id_otd" />
+          <ScalarProperty Name="data_priema" ColumnName="data_priema" />
+          <ScalarProperty Name="id_dolzhn" ColumnName="id_dolzhn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Strana">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Strana">
+        <MappingFragment StoreEntitySet="Strana">
+          <ScalarProperty Name="id_strana" ColumnName="id_strana" />
+          <ScalarProperty Name="name_stran" ColumnName="name_stran" />
+          <ScalarProperty Name="kod_stran" ColumnName="kod_stran" />
+          <ScalarProperty Name="post_index_stran" ColumnName="post_index_stran" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tip_Documenta">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Tip_Documenta">
+        <MappingFragment StoreEntitySet="Tip_Documenta">
+          <ScalarProperty Name="id_tip_doc" ColumnName="id_tip_doc" />
+          <ScalarProperty Name="name_doc" ColumnName="name_doc" />
+          <ScalarProperty Name="id_vid_doc" ColumnName="id_vid_doc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ulica">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Ulica">
+        <MappingFragment StoreEntitySet="Ulica">
+          <ScalarProperty Name="id_ulica" ColumnName="id_ulica" />
+          <ScalarProperty Name="name_ulica" ColumnName="name_ulica" />
+          <ScalarProperty Name="id_mesto" ColumnName="id_mesto" />
+          <ScalarProperty Name="post_index_ulica" ColumnName="post_index_ulica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Valyta">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Valyta">
+        <MappingFragment StoreEntitySet="Valyta">
+          <ScalarProperty Name="id_val" ColumnName="id_val" />
+          <ScalarProperty Name="name_val" ColumnName="name_val" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vid_Documenta">
+      <EntityTypeMapping TypeName="OooPs14_dbModel.Vid_Documenta">
+        <MappingFragment StoreEntitySet="Vid_Documenta">
+          <ScalarProperty Name="id_vid_doc" ColumnName="id_vid_doc" />
+          <ScalarProperty Name="name_vid_doc" ColumnName="name_vid_doc" />
+          <ScalarProperty Name="tip_podrazd" ColumnName="tip_podrazd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
