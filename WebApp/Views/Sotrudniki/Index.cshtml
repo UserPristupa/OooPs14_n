@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebApp.Sotrudniki>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name_sotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastname_sotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.adress_sotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email_sotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone_sotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.data_priema)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dolzhnosti.name_dolzhn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Otdely1.name_otd)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name_sotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastname_sotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.adress_sotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email_sotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone_sotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.data_priema)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dolzhnosti.name_dolzhn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Otdely1.name_otd)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id_sotr }) |
+                @Html.ActionLink("Details", "Details", new { id=item.id_sotr }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.id_sotr })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

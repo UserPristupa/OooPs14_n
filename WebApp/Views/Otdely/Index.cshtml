@@ -1,0 +1,65 @@
+﻿@model IEnumerable<WebApp.Otdely>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>название отдела
+               <!-- @Html.DisplayNameFor(model => model.name_otd) --> 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.id_otd_parent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.date_birth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.date_death)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sotrudniki.name_sotr)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name_otd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_otd_parent)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date_birth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.date_death)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sotrudniki.name_sotr)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id_otd }) |
+                @Html.ActionLink("Details", "Details", new { id=item.id_otd }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.id_otd })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
